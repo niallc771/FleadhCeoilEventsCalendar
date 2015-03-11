@@ -37,5 +37,6 @@ echo "Error: " . $sql . "<br>" . $conn->error;
 
 <?php
 //Redirects to the specified page
-header("Location: http://localhost/wordpress/wp-admin/admin.php?page=aec_manage_venues/");
+//header("Location: http://localhost/wordpress/wp-admin/admin.php?page=aec_manage_venues/");
+header("Location: http://localhost/wordpress/");
 ?>

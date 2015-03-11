@@ -105,6 +105,12 @@ if (!class_exists('ajax_event_calendar')) {
 			add_action('wp_ajax_update_category', array($this, 'update_category'));
 			add_action('wp_ajax_delete_category', array($this, 'confirm_delete_category'));
 			add_action('wp_ajax_reassign_category', array($this, 'reassign_category'));
+            
+			// -----------------------------------------------------------------------------
+			// VENUE AJAX HOOKS
+			add_action('wp_ajax_add_venue', array($this, 'add_venue'));
+			add_action('wp_ajax_update_venue', array($this, 'update_venue'));
+			add_action('wp_ajax_delete_venue', array($this, 'delete_venue'));
 
 			// wordpress overrides
 			add_filter('manage_users_columns', array($this, 'add_events_column'));
@@ -494,6 +500,10 @@ if (!class_exists('ajax_event_calendar')) {
 		//	wp_register_script('jquery-cal', AEC_URL .'/calendar/jquery/jquery.js', false, '1.10.2', true);
 			wp_register_script('jquery-ui-cal', AEC_URL .'js/jquery.init_admin_calendar.js', false, '1.11.2', true);
 			wp_register_script('facebook', 'http://connect.facebook.net/en_US/all.js#xfbml=1', false, '1.0', true);
+            
+			// This will be for venue
+			// Register the venue scripts
+			wp_register_script('init_show_venue', AEC_URL . '/js/jquery.init_admin_venue.js', array('jquery'), AEC_VERSION, true);
 
 			// register styles
 			wp_register_style('custom', AEC_URL . 'css/custom.css', null, AEC_VERSION);
@@ -531,8 +541,18 @@ if (!class_exists('ajax_event_calendar')) {
 					add_action("admin_print_scripts-$sub_options", array($this, 'admin_social_scripts'));
 					add_action("admin_print_styles-$sub_options", array($this, 'calendar_styles'));
                   
-                    // Cathal's work'
-                    $sub_venue = add_submenu_page(AEC_FILE, 'Add Venue', __('Add Venue', AEC_NAME), 'aec_manage_calendar', 'aec_manage_venues', array($this, 'render_admin_venue'));
+					// sub menu page: add venue
+					$sub_venue = add_submenu_page(AEC_FILE, 'Add Venue', __('Add Venue', AEC_NAME), 'aec_manage_calendar', 'aec_manage_venues', array($this, 'render_admin_venue'));
+
+					// venue admin scripts
+					add_action("admin_print_scripts-$sub_venue", array($this, 'admin_venue_scripts'));
+					add_action("admin_print_scripts-$sub_venue", array($this, 'admin_social_scripts'));
+                    
+					// sub menu page: addexport
+					$sub_export = add_submenu_page(AEC_FILE, 'Export Venues', __('Export Venues', AEC_NAME), 'aec_manage_calendar', 'aec_manage_export', array($this, 'render_admin_export'));
+                    
+					// sub menu page: addexport
+					$sub_export = add_submenu_page(AEC_FILE, 'Export Events', __('Export Events', AEC_NAME), 'aec_manage_calendar', 'aec_manage_export_events', array($this, 'render_admin_export_events'));
 				}
 			}
 		}
@@ -620,6 +640,7 @@ if (!class_exists('ajax_event_calendar')) {
 				'update_btn'				=> __('Update', AEC_NAME),
 				'delete_btn'				=> __('Delete', AEC_NAME),
 				'category_type'				=> __('Category type', AEC_NAME),
+				'venue_type'				=> __('Venue ', AEC_NAME),
 				'hide_all_notifications'	=> __('hide all notifications', AEC_NAME),
 				'has_been_created'			=> __('has been created.', AEC_NAME),
 				'has_been_modified'			=> __('has been modified.', AEC_NAME),
@@ -672,6 +693,17 @@ if (!class_exists('ajax_event_calendar')) {
 					'confirm_category_delete'	=> __('Are you sure you want to delete this category type?', AEC_NAME),
 					'confirm_category_reassign'	=> __('Several events are associated with this category. Click OK to reassign these events to the default category.', AEC_NAME),
 					'events_reassigned'			=> __('Events have been reassigned to the default category.', AEC_NAME)
+				)
+			);
+		}
+        
+        function admin_venue_variables() {
+			return array_merge($this->localized_variables(),
+				array(
+					'error_blank_venue'			=> __('Venue cannot be a blank value.', AEC_NAME),
+					'confirm_venue_delete'		=> __('Are you sure you want to delete this Venue?', AEC_NAME),
+					'error_venue'				=> __('Venue has not been deleted', AEC_NAME)
+
 				)
 			);
 		}
@@ -747,6 +779,15 @@ if (!class_exists('ajax_event_calendar')) {
 			wp_enqueue_script('jeditable');
 			wp_enqueue_script('init_show_category');
 			wp_localize_script('init_show_category', 'custom', $this->admin_category_variables());
+		}
+
+		// VENUE SCRIPTS
+		function admin_venue_scripts() {
+			wp_enqueue_script('jQuery');
+			wp_enqueue_script('growl');
+			wp_enqueue_script('jeditable');
+			wp_enqueue_script('init_show_venue');
+			wp_localize_script('init_show_venue', 'custom', $this->admin_venue_variables());
 		}
 
 		function render_aec_version() {
@@ -1024,6 +1065,67 @@ if (!class_exists('ajax_event_calendar')) {
 			$out .= $this->add_sidebar();
 			echo $this->add_wrap($out, "<div class='wrap'>{$top}", "</div>");
 		}
+        
+        // VENUE ------------------------------------------------------------
+		// Render add a new venue
+		function render_admin_venue() {
+			if (!current_user_can('aec_manage_calendar')) {
+				wp_die(__('You do not have sufficient permissions to access this page.', AEC_NAME));
+			}
+			$add = $this->generate_css_venue();
+			$add .= $this->add_wrap(__('Add a New Venue', AEC_NAME), "<p>", "</p>");
+			$add .= $this->add_wrap(__('To add a new venue, enter venue name and click "Add Venue"', AEC_NAME), "<p>", "</p>");
+			$add .= "<form action='http://localhost/wordpress/wp-content/plugins/ajax-event-calendar-changes/location-output.php' method='post' id='aec-venue-form'>\n";
+			// Venue
+			$add .= $this->add_wrap(__('<p>Venue:', AEC_NAME));
+			$add .= "<input type='text' id='venue-name' name='venue-name' value='' class='alignvenue' /> ";
+			// Street
+			$add .= $this->add_wrap(__('<p>Street:', AEC_NAME));
+			$add .= "<input type='text' id='street-name' name='street-name' value='' class='alignvenue' /> ";
+			// City
+			$add .= $this->add_wrap(__('<p>City:', AEC_NAME));
+			$add .= "<input type='text' id='city-name' name='city-name' value='' class='alignvenue'/> ";
+			// State
+			$add .= $this->add_wrap(__('<p>State:', AEC_NAME));
+			$add .= "<input type='text' id='state-name' name='state-name' value='' class='alignvenue'/> ";
+			// Zip
+			$add .= $this->add_wrap(__('<p>Zip:', AEC_NAME));
+			$add .= "<input type='text' id='zip-name' name='zip-name' value='' class='alignvenue'/> ";
+			// Website
+			$add .= $this->add_wrap(__('<p>Website:', AEC_NAME));
+			$add .= "<input type='text' id='website-name' name='website-name' value='' class='alignvenue'/> ";
+			// Add Venue 
+			$add .= $this->add_wrap(__('Add Venue', AEC_NAME), "<br><br><button type='submit' id='updatebtn' class='add button-primary'>", "</button></p>");
+			$add .= "</form>\n";
+			echo($add);
+			
+			$add = "<form action='http://wordpress/wp-content/plugins/ajax-event-calendar-changes/inc/admin-export.php' method='post' id='aec-venue-list'>\n";
+			$venues = $this->db_query_venues();
+			foreach ($venues as $avenue) {
+				$add .= "<p id='id_{$avenue->venue_id}'>\n";
+				$add .= "<input type='text' name='venue-name' value='" . $this->render_i18n_data($avenue->venue_name) . "' class='edit' />\n";
+				$add .= "<input type='text' name='venue-name' value='" . $this->render_i18n_data($avenue->street) . "' class='edit' />\n";
+				$add .= "<input type='text' name='venue-name' value='" . $this->render_i18n_data($avenue->city) . "' class='edit' />\n";
+				$add .= "<input type='text' name='venue-name' style='width:7%' value='" . $this->render_i18n_data($avenue->state) . "' class='edit' />\n";
+				$add .= "<input type='text' name='venue-name' style='width:5%' value='" . $this->render_i18n_data($avenue->zip) . "' class='edit' />\n";
+				$add .= "<input type='text' name='venue-name' value='" . $this->render_i18n_data($avenue->website) . "' class='edit' />\n";
+				$add .= $this->add_wrap(__('Update', AEC_NAME), "<button type='submit' class='update button-secondary'>", "</button>");
+				if ($avenue->venue_id >= 1) {
+					$add .= $this->add_wrap(__('Delete', AEC_NAME), "<button type='submit' class='button-secondary delete'>", "</button>");
+				}
+				$add .= "</p>\n";
+				
+			}
+			$add .= "</form>\n";
+			$out = $this->add_panel(__('Manage Venues', AEC_NAME), $add);
+			$top = "<a href='http://". AEC_HOMEPAGE . "' target='_blank'><span class='em-icon icon32'></span></a>\n";
+			$top .= $this->add_wrap(__('Venues', AEC_NAME), "<h2>", "</h2>");
+
+			$out = $this->add_wrap($out, "<div class='postbox-container' style='width:100%'>", "</div>");
+			//$out .= $this->add_sidebar();
+			echo $this->add_wrap($out, "<div class='wrap'>{$top}", "</div>");
+
+		}
 
 		function render_activity_report() {
 			if (!current_user_can('aec_manage_calendar')) {
@@ -1059,6 +1161,34 @@ if (!class_exists('ajax_event_calendar')) {
 				wp_die(__('You do not have sufficient permissions to access this page.', AEC_NAME));
 			}
 			require_once AEC_PATH . 'inc/admin-options.php';
+		}
+		
+		// EXPORT VENUES---------------------------------------------
+		function render_admin_export() {
+			if (!current_user_can('aec_manage_calendar')) {
+				wp_die(__('You do not have sufficient permissions to access this page.', AEC_NAME));
+			}
+			
+			//$add = $this->add_wrap(__('<h1>Export Events</h1>', AEC_NAME));
+			//$add .= "<form action='http://localhost/wordpress/wp-content/plugins/ajax-event-calendar/inc/admin-export.php' method='post' id='aec-export-form'>\n";
+			//$add .= $this->add_wrap(__('Create CSV File', AEC_NAME), "<br><br><button type='submit' class='add button-primary'>", "</button></p>");
+			//$add .= "</form>\n";
+			//echo($add);
+			require_once AEC_PATH . '/inc/admin-export.php';
+		}
+        
+        // EXPORT EVENTS ---------------------------------------------
+		function render_admin_export_events() {
+			if (!current_user_can('aec_manage_calendar')) {
+				wp_die(__('You do not have sufficient permissions to access this page.', AEC_NAME));
+			}
+			
+			//$add = $this->add_wrap(__('<h1>Export Events</h1>', AEC_NAME));
+			//$add .= "<form action='http://localhost/wordpress/wp-content/plugins/ajax-event-calendar/inc/admin-export.php' method='post' id='aec-export-form'>\n";
+			//$add .= $this->add_wrap(__('Create CSV File', AEC_NAME), "<br><br><button type='submit' class='add button-primary'>", "</button></p>");
+			//$add .= "</form>\n";
+			//echo($add);
+			require_once AEC_PATH . '/inc/admin-export-events.php';
 		}
 
 		function process_events($events, $start, $end, $readonly) {
@@ -1249,7 +1379,7 @@ if (!class_exists('ajax_event_calendar')) {
 		function add_sidebar() {
 			$help = $this->add_wrap(__('Read about installation and options', AEC_NAME), "<p><a href='" . AEC_HOMEPAGE . "installation/' target='_blank'>", "</a>.</p>");
 			$help .= $this->add_wrap(__('Review the FAQ', AEC_NAME), "<p><a href='" . AEC_HOMEPAGE . "faq/' target='_blank'>", "</a>.</p>");
-			$help .= $this->add_wrap(__('Ask for help in the WordPress forum', AEC_NAME), "<p><a href='http://wordpress.org/tags/ajax-event-calendar' target='_blank'>", "</a>.</p>");
+			$help .= $this->add_wrap(__('Ask for help in the WordPress forum', AEC_NAME), "<p><a href='http://wordpress.org/tags/ajax-event-calendar-changes' target='_blank'>", "</a>.</p>");
 			$help .= $this->add_wrap(__('Use the issue tracker', AEC_NAME), "<p><a href='http://code.google.com/p/wp-aec/issues/list' target='_blank'>", "</a> ");
 			$help .= $this->add_wrap(__('to track and report bugs, feature requests, and to submit', AEC_NAME), "", "");
 			$help .= $this->add_wrap(__('poEdit', AEC_NAME), " (<a href='http://weblogtoolscollection.com/archives/2007/08/27/localizing-a-wordpress-plugin-using-poedit/' target='_blank'>", "</a>)");
@@ -1379,6 +1509,51 @@ if (!class_exists('ajax_event_calendar')) {
 			}
 			$this->db_delete_category($_POST['id']);
 		}
+        
+        // VENUE ---------------------------------
+		
+		// Cathal's code
+		
+		
+		// ADD 
+		function add_venue() {
+			if (!isset($_POST['venue_data'])) {
+				return;
+			}
+			$this->db_insert_venue($_POST['venue_data']);
+		}
+		
+		// UPDATE
+		function update_venue() {
+			if (!isset($_POST['venue_data'])) {
+				return;
+			}
+			$this->db_update_venue($_POST['venue_data']);
+		}
+		
+		// DELETE
+		function delete_venue() {
+			if (!isset($_POST['v_id'])) {
+				return;
+			}
+			
+			$this->db_delete_venue($_POST['v_id']);
+		}
+		
+		// outputs added/updated category as json
+		function render_venue($input) {
+			$output = array(
+				'v_id'	 			=> $input->v_id,
+				'venue_name' 		=> $input->venue_name,
+				'street'			=> $input->street,
+				'city'				=> $input->city,
+				'state'				=> $input->state,
+				'zip'				=> $input->zip,
+				'website'			=> $input->website
+			);
+			$this->render_json($output);
+		}
+		// --------------------------------
 
 
 		// DATABASE QUERIES
@@ -1633,6 +1808,89 @@ if (!class_exists('ajax_event_calendar')) {
 				$this->render_json($result);
 			}
 		}
+        // VENUES CODE
+		// Cathal's code
+		
+		// Query Venues 
+		function db_query_venues($venue_id=false, $excluded=false)	{
+			global $wpdb;
+			$excluded = ($excluded)	?	'NOT IN' :	'IN';
+			$wherevenue = ($venue_id) ? " WHERE venue_id {$excluded} ({$venue_id})" : '';
+			$results = $wpdb->get_results('SELECT * FROM ' . $wpdb->prefix . AEC_VENUE_TABLE . $wherevenue . ' ORDER BY venue_id;');
+			return $this->return_result($results);
+		}
+		
+		// INSERT VENUE
+        function db_insert_venue($input) {
+            global $wpdb;
+            $result = $wpdb->insert($wpdb->prefix . AEC_VENUE_TABLE,
+									array('venue_name'		=> $input->venue_name,
+										  'street'			=> $input->street,
+										  'city'			=> $input->city,
+										  'state'			=> $input->state,
+										  'zip'				=> $input->zip,
+										  'website'			=> $input->website
+										),
+									array('%s',
+										  '%s',
+										  '%s',
+										  '%s',
+										  '$s',
+										  '$s'
+										)
+            );
+            if ($this->return_result($result)){
+				$input->venue_id = $wpdb->insert_id; // id of newly created venue
+				$this->render_venue($input);
+				header("Location: http://localhost/wordpress/");
+            }
+        }
+		
+		// UPDATE VENUE
+		function db_update_venue($input) {
+			global $wpdb;
+			$result = $wpdb->update($wpdb->prefix . AEC_VENUE_TABLE,
+									array('venue_name'		=> $input->venue_name,
+										  'street'			=> $input->street,
+										  'city'			=> $input->city,
+										  'state'			=> $input->state,
+										  'zip'				=> $input->zip,
+										  'website'			=> $input->website
+										),
+									array('venue_id' 			=> $input->venue_id),
+									array('%s',
+										  '%s',
+										  '%s',
+										  '%s',
+										  '$s',
+										  '$s'
+										),
+									array('%d') //id
+								);
+								
+			if ($this->return_result($result)) {
+				$this->render_venue($input);
+			}
+		}
+		
+		// DELETE VENUE
+		function db_delete_venue($venue_id) {
+			global $wpdb;
+			$result = $wpdb->query($wpdb->prepare('DELETE FROM ' . $wpdb->prefix . AEC_VENUE_TABLE . ' WHERE id = %d;', $venue_id));
+			if ($this->return_result($result)) {
+				
+				$this->render_json($result);
+			}
+		}
+		
+		// EXPORT 
+		
+		function db_export_events($id) {
+			global $wpdb;
+			$result = $wpdb->query($wpdb->prepare('SELECT * FROM' . $wpdb->prefix . AEC_EVENT_TABLE));
+		}
+
+        
 
 		// UTILITIES
 		function parse_input($input) {
@@ -1776,6 +2034,19 @@ if (!class_exists('ajax_event_calendar')) {
 			return $out;
 		}
 
+		// Venue CSS
+		function generate_css_venue() {
+			$venues = $this->db_query_venues();
+
+			$out 	= "<style>";
+			foreach ($venues as $venue) {
+				$out .= ".ven{$venue->v_id}";
+				$out .= ",.ven{$venue->v_id} .ven-skin";
+			}
+			$out .= "</style>";
+			return $out;
+		}
+
 		// overwrite option, preserving other serialized options
 		function overwrite_option($key, $value) {
 			$options = get_option('aec_options');
@@ -1900,82 +2171,6 @@ if (!class_exists('ajax_event_calendar')) {
 			// validation placeholder
 			return $input;
 		}
-        
-        // cathal's work
-        
-
-        // INSERT NEW VENUE
-        function db_insert_venue($input) {
-            global $wpdb;
-            $result = $wpdb->insert($wpdb->prefix . 'AEC_VENUE_TABLE',
-            array('venue_name' => $input->venue_name,
-            'street' => $input->street,
-            'city' => $input->city,
-            'state' => $input->state,
-            'zip' => $input->zip,
-            'website' => $input->website
-            ),
-            array('%s',
-            '%s',
-            '%s',
-            '%s',
-            '%s',
-            '%s'
-            )
-            );
-            if ($this->return_result($result)){
-            $input->venue_id = $wpdb->insert_id; // id of newly created venue/location
-            $this->render_venue($input);
-            }
-        }
-        
-        // outputs added(inserted)/updated venue name as json
-        function render_venue($input){
-            $output = array(
-            'venue_id' => $input->venue_id,
-            'venue_name' => $input->venue_name,
-            'street' => $input->street,
-            'city' => $input->city,
-            'state' => $input->state,
-            'zip' => $input->zip,
-            'website' => $input->website
-            );
-            $this->render_json($output);
-        }
-        
-        
-        // Render add a new venue
-        function render_admin_venue() {
-        if (!current_user_can('aec_manage_calendar')) {
-        wp_die(__('You do not have sufficient permissions to access this page.', 
-        
-        AEC_NAME));
-        }
-        $add .= $this->add_wrap(__('Add a New Venue', AEC_NAME), "<p>", "</p>");
-        $add .= $this->add_wrap(__('To add a new venue, enter venue name and click "Add Venue"', AEC_NAME), "<p>", "</p>");
-        $add .= "<form action='http://localhost/wordpress/wp-content/plugins/ajax-event-calendar-changes/location-output.php' method='post' id='aec-venue-form'>\n";
-        $add .= $this->add_wrap(__('<p>Venue:', AEC_NAME));
-        $add .= "<input type='text' id='venue-name' name='venue-name' value='' class='alignvenue' /> ";
-        // Street
-        $add .= $this->add_wrap(__('<p>Street:', AEC_NAME));
-        $add .= "<input type='text' id='street-name' name='street-name' value='' class='alignvenue' /> ";
-        // City
-        $add .= $this->add_wrap(__('<p>City:', AEC_NAME));
-        $add .= "<input type='text' id='city-name' name='city-name' value='' class='alignvenue'/> ";
-        // State
-        $add .= $this->add_wrap(__('<p>State:', AEC_NAME));
-        $add .= "<input type='text' id='state-name' name='state-name' value='' class='alignvenue'/> ";
-        // Zip
-        $add .= $this->add_wrap(__('<p>Zip:', AEC_NAME));
-        $add .= "<input type='text' id='zip-name' name='zip-name' value='' class='alignvenue'/> ";
-        // Website
-        $add .= $this->add_wrap(__('<p>Website:', AEC_NAME));
-        $add .= "<input type='text' id='website-name' name='website-name' value='' class='alignvenue'/> ";
-        // Add Venue
-        $add .= $this->add_wrap(__('Add Venue', AEC_NAME), "<br><br><button type='submit' class='add button-primary'>", "</button></p>");
-        $add .= "</form>\n";
-        echo($add);
-        }
 	}
 }
 
