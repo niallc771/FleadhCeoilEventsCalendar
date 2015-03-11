@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<venue><![CDATA[Blue Lagoon]]></venue>
+		<street><![CDATA[Riverside]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Café Grappa]]></venue>
+		<street><![CDATA[Rockwood Parade]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Café Osta ]]></venue>
+		<street><![CDATA[Garavogue Weir]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.osta.ie/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Café Slice The Model]]></venue>
+		<street><![CDATA[The Model]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Calry Church]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Carpark in Strandhill]]></venue>
+		<street><![CDATA[Strandhill]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Carraroe Church]]></venue>
+		<street><![CDATA[Old Dublin Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Clarence Hotel]]></venue>
+		<street><![CDATA[Clarion Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.clarionhotelsligo.com]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Clarion Canis Major]]></venue>
+		<street><![CDATA[Clarion Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.clarionhotelsligo.com]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Costa Cafe]]></venue>
+		<street><![CDATA[Johnston's Court]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Drumcliffe Church of Ireland]]></venue>
+		<street><![CDATA[Drumcliffe]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Gaiety Cinema]]></venue>
+		<street><![CDATA[Wine Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.gaietysligo.com]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Gilhooly Hall]]></venue>
+		<street><![CDATA[Temple Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligocathedral.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Grammar]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligogrammarschool.org/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Grammar Calry Hall]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligogrammarschool.org/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Grammar Gym]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligogrammarschool.org/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Grammar Sports Hall]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligogrammarschool.org/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Hamilton Gallery]]></venue>
+		<street><![CDATA[4 Castle Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Hawk's Well Theatre]]></venue>
+		<street><![CDATA[Temple Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.hawkswell.com]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Ionad na Gaeilge Sligo VEC]]></venue>
+		<street><![CDATA[Quay Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[ Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligovec.ie/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT A004]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT A005]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT A006]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT B1040]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT B1050]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT B1058]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT C1004]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT C1006]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT D1001]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT D1001]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT D1003]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT E0011]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[IT E0017]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Knocknarea Arena]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Knocknarea public car-park]]></venue>
+		<street><![CDATA[Knocknaread]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Lyons' Cafe ]]></venue>
+		<street><![CDATA[Quay Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[ Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.garystafford.com/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[McLynns Pub]]></venue>
+		<street><![CDATA[Old Market Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Mercy College Gym]]></venue>
+		<street><![CDATA[Chapel Hill]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.mercycollegesligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Methodist Church]]></venue>
+		<street><![CDATA[Wine Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[	]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[O'Connell Street]]></venue>
+		<street><![CDATA[Main Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Oifig na Fleidhe]]></venue>
+		<street><![CDATA[Riverside]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Peace III Gig Rig]]></venue>
+		<street><![CDATA[Stephen Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Radisson Blu Hotel]]></venue>
+		<street><![CDATA[Ballincar]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Riverside]]></venue>
+		<street><![CDATA[Riverside]]></street>
+		<city><![CDATA[Sligo ]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Saint Marys GAA Club]]></venue>
+		<street><![CDATA[ Ballydoogan]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Shennanigans]]></venue>
+		<street><![CDATA[Bridge Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo County Museum]]></venue>
+		<street><![CDATA[Stephen Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligolibrary.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo Gaol]]></venue>
+		<street><![CDATA[St Annes Place]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligococo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo Park Hotel]]></venue>
+		<street><![CDATA[Pearse Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligoparkhotel.com]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo Town]]></venue>
+		<street><![CDATA[O'Connell Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo Youth Theatre]]></venue>
+		<street><![CDATA[ Quay Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Southern Hotel]]></venue>
+		<street><![CDATA[Strandhill Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligosouthernhotel.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[St Anne's Club]]></venue>
+		<street><![CDATA[Chapel Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[ Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[St Edward's School]]></venue>
+		<street><![CDATA[Clarion Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://stedwards.scoilnet.ie/blog ]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[St John's Sports Hall]]></venue>
+		<street><![CDATA[John Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[St Marys Catherdral]]></venue>
+		<street><![CDATA[Temple Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligocathedral.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Summerhill Secondary School]]></venue>
+		<street><![CDATA[College Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.summerhillcollege.ie	]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Super Valu Car Park Grange]]></venue>
+		<street><![CDATA[Grange]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Cat & The Moon]]></venue>
+		<street><![CDATA[Castle Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.thecatandthemoon.com/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Crib]]></venue>
+		<street><![CDATA[ Rockwood Parade]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Glasshouse Hotel]]></venue>
+		<street><![CDATA[Swan Point]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.theglasshouse.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Mercy College Gymnasium]]></venue>
+		<street><![CDATA[Chapel Hill]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.mercycollegesligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Mercy Secondary School]]></venue>
+		<street><![CDATA[Chapel Hill]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.mercycollegesligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Model]]></venue>
+		<street><![CDATA[The Mall]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.themodel.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[The Southern Hotel]]></venue>
+		<street><![CDATA[Strandhill Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligosouthernhotel.ie/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Tourist Information Office]]></venue>
+		<street><![CDATA[O'Connell Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.sligotourism.ie/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Ursuline College]]></venue>
+		<street><![CDATA[Finisklin Road]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.ursulinecollegesligo.com/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Yeats Building]]></venue>
+		<street><![CDATA[Hyde Bridge]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.yeatssociety.com/]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Sligo IT Hume Hall]]></venue>
+		<street><![CDATA[Ash Lane]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.itsligo.ie]]></website>
+	</node>
+	<node>
+		<venue><![CDATA[Lyons Cafe ]]></venue>
+		<street><![CDATA[Quay Street]]></street>
+		<city><![CDATA[Sligo]]></city>
+		<state><![CDATA[ Ireland]]></state>
+		<zip><![CDATA[]]></zip>
+		<website><![CDATA[http://www.garystafford.com/]]></website>
+	</node>
+</data>

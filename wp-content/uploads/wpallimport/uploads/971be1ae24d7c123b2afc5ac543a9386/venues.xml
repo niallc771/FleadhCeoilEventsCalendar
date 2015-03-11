@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<bluelagoon><![CDATA[Café Grappa]]></bluelagoon>
+		<riverside><![CDATA[Rockwood Parade]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Café Osta ]]></bluelagoon>
+		<riverside><![CDATA[Garavogue Weir]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.osta.ie/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Café Slice The Model]]></bluelagoon>
+		<riverside><![CDATA[The Model]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Calry Church]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Carpark in Strandhill]]></bluelagoon>
+		<riverside><![CDATA[Strandhill]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Carraroe Church]]></bluelagoon>
+		<riverside><![CDATA[Old Dublin Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Clarence Hotel]]></bluelagoon>
+		<riverside><![CDATA[Clarion Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.clarionhotelsligo.com]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Clarion Canis Major]]></bluelagoon>
+		<riverside><![CDATA[Clarion Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.clarionhotelsligo.com]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Costa Cafe]]></bluelagoon>
+		<riverside><![CDATA[Johnston's Court]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Drumcliffe Church of Ireland]]></bluelagoon>
+		<riverside><![CDATA[Drumcliffe]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Gaiety Cinema]]></bluelagoon>
+		<riverside><![CDATA[Wine Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.gaietysligo.com]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Gilhooly Hall]]></bluelagoon>
+		<riverside><![CDATA[Temple Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligocathedral.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Grammar]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligogrammarschool.org/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Grammar Calry Hall]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligogrammarschool.org/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Grammar Gym]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligogrammarschool.org/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Grammar Sports Hall]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligogrammarschool.org/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Hamilton Gallery]]></bluelagoon>
+		<riverside><![CDATA[4 Castle Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Hawk's Well Theatre]]></bluelagoon>
+		<riverside><![CDATA[Temple Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.hawkswell.com]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Ionad na Gaeilge Sligo VEC]]></bluelagoon>
+		<riverside><![CDATA[Quay Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[ Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligovec.ie/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT A004]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT A005]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT A006]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT B1040]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT B1050]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT B1058]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT C1004]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT C1006]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT D1001]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT D1001]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT D1003]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT E0011]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[IT E0017]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Knocknarea Arena]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Knocknarea public car-park]]></bluelagoon>
+		<riverside><![CDATA[Knocknaread]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Lyons' Cafe ]]></bluelagoon>
+		<riverside><![CDATA[Quay Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[ Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.garystafford.com/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[McLynns Pub]]></bluelagoon>
+		<riverside><![CDATA[Old Market Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Mercy College Gym]]></bluelagoon>
+		<riverside><![CDATA[Chapel Hill]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.mercycollegesligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Methodist Church]]></bluelagoon>
+		<riverside><![CDATA[Wine Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[	]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[O'Connell Street]]></bluelagoon>
+		<riverside><![CDATA[Main Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Oifig na Fleidhe]]></bluelagoon>
+		<riverside><![CDATA[Riverside]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Peace III Gig Rig]]></bluelagoon>
+		<riverside><![CDATA[Stephen Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Radisson Blu Hotel]]></bluelagoon>
+		<riverside><![CDATA[Ballincar]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Riverside]]></bluelagoon>
+		<riverside><![CDATA[Riverside]]></riverside>
+		<sligo><![CDATA[Sligo ]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Saint Marys GAA Club]]></bluelagoon>
+		<riverside><![CDATA[ Ballydoogan]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Shennanigans]]></bluelagoon>
+		<riverside><![CDATA[Bridge Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo County Museum]]></bluelagoon>
+		<riverside><![CDATA[Stephen Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligolibrary.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo Gaol]]></bluelagoon>
+		<riverside><![CDATA[St Annes Place]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligococo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo Park Hotel]]></bluelagoon>
+		<riverside><![CDATA[Pearse Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligoparkhotel.com]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo Town]]></bluelagoon>
+		<riverside><![CDATA[O'Connell Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo Youth Theatre]]></bluelagoon>
+		<riverside><![CDATA[ Quay Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Southern Hotel]]></bluelagoon>
+		<riverside><![CDATA[Strandhill Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligosouthernhotel.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[St Anne's Club]]></bluelagoon>
+		<riverside><![CDATA[Chapel Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[ Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[St Edward's School]]></bluelagoon>
+		<riverside><![CDATA[Clarion Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://stedwards.scoilnet.ie/blog ]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[St John's Sports Hall]]></bluelagoon>
+		<riverside><![CDATA[John Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[St Marys Catherdral]]></bluelagoon>
+		<riverside><![CDATA[Temple Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligocathedral.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Summerhill Secondary School]]></bluelagoon>
+		<riverside><![CDATA[College Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.summerhillcollege.ie	]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Super Valu Car Park Grange]]></bluelagoon>
+		<riverside><![CDATA[Grange]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Cat & The Moon]]></bluelagoon>
+		<riverside><![CDATA[Castle Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.thecatandthemoon.com/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Crib]]></bluelagoon>
+		<riverside><![CDATA[ Rockwood Parade]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Glasshouse Hotel]]></bluelagoon>
+		<riverside><![CDATA[Swan Point]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.theglasshouse.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Mercy College Gymnasium]]></bluelagoon>
+		<riverside><![CDATA[Chapel Hill]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.mercycollegesligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Mercy Secondary School]]></bluelagoon>
+		<riverside><![CDATA[Chapel Hill]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.mercycollegesligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Model]]></bluelagoon>
+		<riverside><![CDATA[The Mall]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.themodel.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[The Southern Hotel]]></bluelagoon>
+		<riverside><![CDATA[Strandhill Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligosouthernhotel.ie/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Tourist Information Office]]></bluelagoon>
+		<riverside><![CDATA[O'Connell Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.sligotourism.ie/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Ursuline College]]></bluelagoon>
+		<riverside><![CDATA[Finisklin Road]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.ursulinecollegesligo.com/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Yeats Building]]></bluelagoon>
+		<riverside><![CDATA[Hyde Bridge]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.yeatssociety.com/]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Sligo IT Hume Hall]]></bluelagoon>
+		<riverside><![CDATA[Ash Lane]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.itsligo.ie]]></undefined5>
+	</node>
+	<node>
+		<bluelagoon><![CDATA[Lyons Cafe ]]></bluelagoon>
+		<riverside><![CDATA[Quay Street]]></riverside>
+		<sligo><![CDATA[Sligo]]></sligo>
+		<ireland><![CDATA[ Ireland]]></ireland>
+		<undefined4><![CDATA[]]></undefined4>
+		<undefined5><![CDATA[http://www.garystafford.com/]]></undefined5>
+	</node>
+</data>
